@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8"/>
+
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Fire works!!!</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-entity particle-system="preset:default"></a-entity>
+        <a-entity 
+        position="0 1 0"
+        spe-particles="
+        color:yellow,red,blue,green;
+        distribution:cone;
+        randomize-velocity:true;
+        radius:1;
+        velocity:1;
+        particle-count:800;
+        velocity-spread:15;
+        drag:10;
+        max-age:2;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+        <a-entity 
+        position="-3 3 0"
+        spe-particles="
+        color:yellow,red,blue,green;
+        distribution:cone;
+        randomize-velocity:true;
+        radius:1;
+        velocity:1;
+        particle-count:1000;
+        velocity-spread:15;
+        drag:10;
+        max-age:2;
+        duration:-1;
+        size:2,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+
+        <a-entity 
+        position="-3 -3 0"
+        spe-particles="
+        color:yellow,red,blue,green;
+        distribution:cone;
+        randomize-velocity:true;
+        radius:1;
+        velocity:1;
+        particle-count:1000;
+        velocity-spread:15;
+        drag:10;
+        max-age:-4;
+        duration:-1;
+        size:2,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+        <a-entity 
+        position="0 1 0"
+        spe-particles="
+        color:purple,pink,orange,teal;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:1;
+        velocity:2;
+        particle-count:1800;
+        velocity-spread:30;
+        drag:1;
+        max-age:2;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+
+        <a-entity 
+        position="0 1 0"
+        spe-particles="
+        color:purple,pink,orange,teal;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:1;
+        velocity:2;
+        particle-count:1800;
+        velocity-spread:30;
+        drag:1;
+        max-age:4;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+
+        <a-entity 
+        position="4 4 0"
+        spe-particles="
+        color:purple,pink,orange,teal;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:1;
+        velocity:2;
+        particle-count:1800;
+        velocity-spread:30;
+        drag:1;
+        max-age:-3;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+        <a-entity 
+        position="-5 4 0"
+        spe-particles="
+        color:purple,pink,orange,teal;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:1;
+        velocity:2;
+        particle-count:1800;
+        velocity-spread:20;
+        drag:1;
+        max-age:-5;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:10000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+
+        <a-entity 
+        position="-2 1 0"
+        spe-particles="
+        color:purple,pink,orange,teal;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:1;
+        velocity:2;
+        particle-count:1800;
+        velocity-spread:40;
+        drag:1;
+        max-age:1;
+        duration:-1;
+        size:1,1,1,0;
+        active-multiplier:1000;
+        blending:additive;
+
+        "
+        >
+
+        </a-entity>
+
+
+
+        <a-entity position="0 2 -4" spe-particles="
+      texture: star.png;
+      color: #FF0000, #FFFF00, #00FFFF, #FF00FF;
+      distribution: BOX;
+      opacity: 1,1,1,0;
+      velocity: 0 0.5 0;
+      velocity-spread: 0.2 0 0.2; 
+      blending: normal;
+      particle-count: 100;
+      angle: 0, 6.28;
+      maxAge: 3; ">
+    </a-entity>
+
+        <a-sky color="black">
+
+        </a-sky>
+
+        <a-camera position="0 0 28"></a-camera>
+    </a-scene>
+</body>
+
+</html>
